@@ -8,7 +8,10 @@ from random import randint
 
 #declaramos una función donde meteremos todo
 def numerosAleatorios(n=10):
-    #creamos un set VACÍO para almacenar de los 10 números, los que NO SE REPITAN 
+    #creamos un set VACÍO para almacenar de los 10 números, los que NO SE REPITAN
+    #--------------------------------------------------------------------------------------------------------------------#
+    #SE CREA COMO DICT, LO QUE HACE QUE SE MUESTREN EN ORDEN. CAMBIAR A SET, A NO SER QUE CARMELO DIGA QUE ASÍ ESTÁ BIEN
+    #--------------------------------------------------------------------------------------------------------------------#
     numeroslocos={}
     #aquí hacemos el bucle
     while True:
