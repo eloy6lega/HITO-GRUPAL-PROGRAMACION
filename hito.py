@@ -79,9 +79,8 @@ vector_seleccion = sample(lista_de_numeros_3,10)
 
 
 def selectionsort(vector_seleccion):
-    """Esta función ordenara el vector que le pases como argumento con el Método Selection Sort"""
     # Imprimimos la lista obtenida al principio (Desordenada)
-    print ("El vector a ordenar es:",vector_seleccion)
+    print ("SELECCIÓN: El vector SIN ordenar es:",vector_seleccion)
     
     largo = 0
     
@@ -99,7 +98,7 @@ def selectionsort(vector_seleccion):
         # Cambiamos el elemento minimo encontrado con el primer elemento de la matriz
         vector_seleccion[i], vector_seleccion[minimo] = vector_seleccion[minimo], vector_seleccion[i]
         # Repetimos el proceso hasta terminar
-    print("El vector ordenado es: ",vector_seleccion)
+    print("SELECCIÓN: Ordenado con Selección: ",vector_seleccion)
 
 selectionsort(vector_seleccion)
 
@@ -116,11 +115,8 @@ lista_de_numeros_4 = list(range(1, 11)) # Creamos la lista base con números del
 vector_shell = sample(lista_de_numeros_4,10)
 
 def shellsort(vector_shell):
-    
-    """Esta función ordenara el vector que le pases como argumento 
-    con el Método Shell Sort"""
-    
-    print("El vector a ordenar con shell es:", vector_shell)
+
+    print("SHELL: El vector SIN ordenar es:", vector_shell)
     
     largo = 0
     
@@ -140,6 +136,6 @@ def shellsort(vector_shell):
                 j -= distancia
             vector_shell[j] = val
         distancia //= 2 # Acotamos la distancia nuevamente y continua el ciclo
-    print("El vector ordenado con shell es: ", vector_shell)
+    print("SHELL: Ordenado con Shell: ", vector_shell)
     
 shellsort(vector_shell)
